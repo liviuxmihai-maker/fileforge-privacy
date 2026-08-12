@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Extractor and Matcher — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a2530;
+      background: #f8fafb;
+    }
+    header {
+      background: #1a2530;
+      color: #fff;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 6px; color: #a0b4bf; font-size: 0.95rem; }
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px 64px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a2530;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e2eae5;
+    }
+    p  { margin-bottom: 14px; }
+    ul { margin: 0 0 14px 24px; }
+    li { margin-bottom: 6px; }
+    a  { color: #2471a3; }
+    code {
+      background: #eef2f4;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .highlight {
+      background: #eaf4fb;
+      border-left: 4px solid #2471a3;
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 24px 0;
+      font-size: 0.97rem;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #6b8da0;
+      border-top: 1px solid #e2eae5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Data Extractor and Matcher</h1>
+  <p>Privacy Policy · by FileForge</p>
+</header>
+
+<main>
+
+  <div class="highlight">
+    <strong>Short version:</strong> The app processes your files entirely on your own device
+    by default. The only data that ever leaves your device is what you explicitly send to an
+    optional third-party AI service you've configured yourself with your own API key.
+  </div>
+
+  <p><strong>Last updated:</strong> 12 August 2026</p>
+
+  <p>
+    This policy covers the <strong>Data Extractor and Matcher</strong> Windows desktop app
+    ("the app"), published on the Microsoft Store by FileForge.
+  </p>
+
+  <h2>What the app does with your files</h2>
+  <p>You point the app at a folder of scans (PDF/image/text) and an Excel file. The app:</p>
+  <ul>
+    <li>Reads the scans and extracts fields (e.g. name, IBAN, email, invoice reference) using local OCR (Tesseract) and pattern matching.</li>
+    <li>Fuzzy-matches extracted names/values against rows in the Excel file you provide.</li>
+    <li>Writes results back to a new Excel copy plus <code>review_*.csv</code> and <code>audit_*.csv</code> files, saved to a folder you choose (by default, <code>Documents\Data Extractor and Matcher</code> on your own machine).</li>
+  </ul>
+  <p>None of this — scans, Excel contents, extracted fields, or results — is uploaded anywhere, unless you opt in to a cloud extractor as described below.</p>
+
+  <h2>Optional cloud extractors (opt-in, your own keys)</h2>
+  <p>The app supports two optional cloud-based extraction modes, selectable in settings. Both are <strong>off unless you configure them</strong>:</p>
+  <ul>
+    <li><strong>Azure AI Document Intelligence</strong> — if you supply your own Azure endpoint and API key, scanned documents are sent to your Azure resource for extraction.</li>
+    <li><strong>OpenAI (LLM extractor)</strong> — if you supply your own OpenAI API key, scanned document text is sent to OpenAI's API for extraction.</li>
+  </ul>
+  <p>
+    In both cases, the data leaves your device only because you provided credentials for a
+    service you control, and only for the documents you choose to process in that mode. The
+    app does not embed, share, or use any API keys other than the ones you enter. Review
+    Microsoft's, Azure's, and OpenAI's own privacy terms for how they handle data sent to
+    their services.
+  </p>
+
+  <h2>Microsoft Store license check</h2>
+  <p>
+    On launch, the app asks the Windows Store service (<code>StoreContext</code>) to confirm
+    your copy is licensed. This is a standard Windows API call handled by the operating
+    system to verify your purchase; the app does not see or store any payment or account
+    information itself — that is handled entirely by Microsoft.
+  </p>
+
+  <h2>What the app does NOT do</h2>
+  <ul>
+    <li>No user accounts or sign-in</li>
+    <li>No advertising or ad tracking</li>
+    <li>No analytics, telemetry, or crash reporting</li>
+    <li>No sale or sharing of your data with third parties for marketing</li>
+    <li>No network access at all in local/default mode</li>
+  </ul>
+
+  <h2>Data retention</h2>
+  <p>
+    All output files (Excel copies, review/audit CSVs) are written to a folder on your own
+    device that you choose, and remain there under your control until you delete them. The
+    app itself does not retain copies elsewhere.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>
+    The app is a general business/productivity utility not directed at children and does not
+    knowingly collect data from children.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the "Last updated" date above will be revised and, where
+    required, the update will be reflected in the Microsoft Store listing.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:liviuxmihai@gmail.com">liviuxmihai@gmail.com</a></p>
+
+</main>
+
+<footer>
+  FileForge · see also the <a href="privacy_policy.html">general FileForge privacy policy</a>
+</footer>
+
+</body>
+</html>
